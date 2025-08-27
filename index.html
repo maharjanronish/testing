@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Sample Page</title>
+    <title>My Sample Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 20px;
+            line-height: 1.6;
         }
         header {
             background-color: #4CAF50;
             color: white;
             padding: 20px;
             margin-bottom: 20px;
+        }
+        section {
+            margin: 40px 0;
         }
         img {
             width: 300px;
@@ -26,27 +30,71 @@
             font-size: 16px;
             cursor: pointer;
         }
+        .projects img {
+            width: 200px;
+            margin: 10px;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #555;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Sample Page</h1>
-        <p>This is a demo HTML page with some basic content.</p>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi! I’m Ronish, a web developer and coding enthusiast.</p>
     </header>
 
     <main>
-        <h2>About This Page</h2>
-        <p>This page contains text, an image, and a button to show interactivity.</p>
+        <!-- About Section -->
+        <section>
+            <h2>About Me</h2>
+            <p>I love coding and building cool projects. Currently a Computer Science and IT student exploring web development and open-source contributions.</p>
+            <img src="https://via.placeholder.com/300" alt="Sample Image">
+            <br>
+            <button onclick="alert('Hello! You clicked the button.')">Click Me</button>
+        </section>
 
-        <img src="https://via.placeholder.com/300" alt="Sample Image">
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>Projects</h2>
+            <p>Some of my recent projects:</p>
+            <div>
+                <img src="https://via.placeholder.com/200" alt="Project 1">
+                <img src="https://via.placeholder.com/200" alt="Project 2">
+                <img src="https://via.placeholder.com/200" alt="Project 3">
+            </div>
+        </section>
 
-        <br>
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <p>Languages and tools I work with:</p>
+            <ul style="list-style:none; padding:0;">
+                <li>💻 HTML, CSS, JavaScript</li>
+                <li>🐍 Python</li>
+                <li>⚛️ React</li>
+                <li>🛠 Git, VSCode</li>
+            </ul>
+        </section>
 
-        <button onclick="alert('Hello! You clicked the button.')">Click Me</button>
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out via email or social media:</p>
+            <p>Email: <a href="mailto:ronish@example.com">ronish@example.com</a></p>
+            <p>
+                <a href="#">GitHub</a> | 
+                <a href="#">LinkedIn</a> | 
+                <a href="#">Twitter</a>
+            </p>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 My Sample Page. All rights reserved.</p>
+        <p>&copy; 2025 Ronish Maharjan. All rights reserved.</p>
     </footer>
 </body>
 </html>
